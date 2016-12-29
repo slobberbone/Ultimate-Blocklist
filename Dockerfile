@@ -8,7 +8,7 @@ RUN chmod u+x  /UpdateList.sh
 
 RUN echo "0 * * * * root 0 * * * * ./UpdateList.sh -c /config >> /var/log/UpdateList.log 2>&1"
 
-EXPOSE 80
+#EXPOSE 80
 
 CMD [ "python", "./UltimateBlockList.py" ]
 
